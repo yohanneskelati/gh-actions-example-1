@@ -13,3 +13,9 @@ jobs:
       - run: bats -v
       - run: java -v
       - run: mvn clean install
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin' # See 'Supported distributions' for available options
+          java-version: '21'
+      - run: java -version
