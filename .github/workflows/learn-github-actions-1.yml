@@ -11,9 +11,6 @@ jobs:
           node-version: '20'
       - run: npm install -g bats
       - run: bats -v
-      - run: java -v
-      - run: mvn clean install
-
       - uses: actions/setup-java@v4
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
